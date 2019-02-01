@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>I'm the Naia!</title>
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navigation">
+      <li><a class="nav-link" href="./index.html">Home</a></li>
+      <li><a class="nav-link" href="./index.html#story-from-gallery">About Me</a></li>
+      <li><a class="gallery-link" href="#"><span class="current">Gallery</span></a></li>
+    </nav>
+    <h1 class="gallery-title">Gallery</h1>
+
+    <!-- Gallery Previews -->
+    <div class="gallery-previews">
+
+      <div class="gallery-image-container" onclick="openGallery(1)">
+        <img class="gallery-image one" src="./pictures/post_bath.jpg">
+      </div>
+
+      <div class="gallery-image-container" onclick="openGallery(2)">
+        <img class="gallery-image two" src="./pictures/puppy_naia.jpg">
+      </div>
+
+      <div class="gallery-image-container" onclick="openGallery(3)">
+        <img class="gallery-image three" src="./pictures/naia_puppy.jpg">
+      </div>
+
+      <div class="gallery-image-container" onclick="openGallery(4)">
+        <img class="gallery-image four" src="./pictures/profile_pic.jpg">
+      </div>
+
+      <div class="gallery-image-container" onclick="openGallery(5)">
+        <img class="gallery-image five" src="./pictures/thecutest.jpg">
+      </div>
+
+      <div class="gallery-image-container" onclick="openGallery(6)">
+        <img class="gallery-image six" src="./pictures/Naia_adult.jpg">
+      </div>
+
+      <div class="gallery-image-container" onclick="openGallery(7)">
+        <img class="gallery-image seven" src="./pictures/naia_smile.jpg">
+      </div>
+
+      <div class="gallery-image-container" onclick="openGallery(8)">
+        <img class="gallery-image eight" src="./pictures/thechase.jpg">
+      </div>
+
+      <div class="gallery-image-container" onclick="openGallery(9)">
+        <img class="gallery-image nine" src="./pictures/naia_smile_2.jpg">
+      </div>
+
+      <div class="gallery-image-container" onclick="openGallery(10)">
+        <img class="gallery-image ten" src="./pictures/Naia_snow.jpg">
+      </div>
+
+      <div class="gallery-image-container" onclick="openGallery(11)">
+        <img class="gallery-image eleven" src="./pictures/naia_window.jpg">
+      </div>
+
+      <div class="gallery-image-container" onclick="openGallery(12)">
+        <img class="gallery-image twelve" src="./pictures/naia_pose.jpg">
+      </div>
+
+      <div class="gallery-image-container" onclick="openGallery(13)">
+        <img class="gallery-image thirteen" src="./pictures/Naia_ball.jpg">
+      </div>
+
+      <div class="gallery-image-container" onclick="openGallery(14)">
+        <img class="gallery-image fourteen" src="./pictures/raincoat.jpg">
+      </div>
+
+      <div class="gallery-image-container" onclick="openGallery(15)">
+        <img class="gallery-image fifteen" src="./pictures/naia_family.jpg">
+      </div>
+
+    </div>
+    <!-- Previews end -->
+
+    <!-- Lightbox -->
+
+    <div class="lightbox">
+
+      <div class="lightbox-image-container fade">
+        <img class="lightbox-image" src="./pictures/post_bath.jpg">
+      </div>
+
+      <div class="lightbox-image-container fade">
+        <img class="lightbox-image" src="./pictures/puppy_naia.jpg">
+      </div>
+
+      <div class="lightbox-image-container fade">
+        <img class="lightbox-image" src="./pictures/naia_puppy.jpg">
+      </div>
+
+      <div class="lightbox-image-container fade">
+        <img class="lightbox-image" src="./pictures/profile_pic.jpg">
+      </div>
+
+      <div class="lightbox-image-container fade">
+        <img class="lightbox-image" src="./pictures/thecutest.jpg">
+      </div>
+
+      <div class="lightbox-image-container fade">
+        <img class="lightbox-image" src="./pictures/Naia_adult.jpg">
+      </div>
+
+      <div class="lightbox-image-container fade">
+        <img class="lightbox-image" src="./pictures/naia_smile.jpg">
+      </div>
+
+      <div class="lightbox-image-container fade">
+        <img class="lightbox-image" src="./pictures/thechase.jpg">
+      </div>
+
+      <div class="lightbox-image-container fade">
+        <img class="lightbox-image" src="./pictures/naia_smile_2.jpg">
+      </div>
+
+      <div class="lightbox-image-container fade">
+        <img class="lightbox-image" src="./pictures/Naia_snow.jpg">
+      </div>
+
+      <div class="lightbox-image-container fade">
+        <img class="lightbox-image" src="./pictures/naia_window.jpg">
+      </div>
+
+      <div class="lightbox-image-container fade">
+        <img class="lightbox-image" src="./pictures/naia_pose.jpg">
+      </div>
+
+      <div class="lightbox-image-container fade">
+        <img class="lightbox-image" src="./pictures/Naia_ball.jpg">
+      </div>
+
+      <div class="lightbox-image-container fade">
+        <img class="lightbox-image" src="./pictures/raincoat.jpg">
+      </div>
+
+      <div class="lightbox-image-container fade">
+        <img class="lightbox-image" src="./pictures/naia_family.jpg">
+      </div>
+
+      <div class="close-lightbox" onclick="closeLightbox()">&times;</div>
+      <div class="next" onclick="nextSlide(-1)">&lang;</div>
+      <div class="prev" onclick="nextSlide(1)">&rang;</div>
+
+    </div>
+    <!-- Lightbox end -->
+
+    <footer>
+      <p class="copyright">&copy; 2019</p>
+    </footer>
+
+    <script src="./js/gallery.js"></script>
+  </body>
+</html>
